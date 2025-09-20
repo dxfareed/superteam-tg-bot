@@ -1,21 +1,28 @@
 {
   "name": "superteam-tg-bot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
+  "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dxfareed/superteam-tg-bot.git"
   },
-  "keywords": [],
+  "keywords": ["telegram", "bot", "superteam", "notifications"],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/dxfareed/superteam-tg-bot/issues"
   },
-  "homepage": "https://github.com/dxfareed/superteam-tg-bot#readme"
+  "homepage": "https://github.com/dxfareed/superteam-tg-bot#readme",
+  "description": "A Telegram bot for Superteam notifications and community management",
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "firebase": "^12.3.0",
+    "node-cron": "^4.2.1",
+    "node-telegram-bot-api": "^0.66.0"
+  }
 }
