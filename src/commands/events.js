@@ -1,12 +1,14 @@
 import https from 'https';
+import { LUMA_W_API } from '../config/api-url.js';
 
 const events = (bot) => {
   bot.onText(/\/events/, (msg) => {
     const chatId = msg.chat.id;
-    const LUMA_W_API = process.env.LUMA_W_API;
+
+    const host_url = LUMA_W_API;
 
     const options = {
-      hostname: LUMA_W_API,
+      hostname: host_url,
       path: '/',
       method: 'POST',
       headers: {

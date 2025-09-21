@@ -5,13 +5,16 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node src/test/testEventNotifier.js && node src/test/testBountyNotifier.js",
+    "test:events": "node src/test/testEventNotifier.js",
+    "test:bounties": "node src/test/testBountyNotifier.js",
+    "check:subs": "node src/test/checkSubscriptions.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dxfareed/superteam-tg-bot.git"
   },
-  "keywords": ["telegram", "bot", "superteam", "notifications"],
+  "keywords": ["telegram", "bot", "superteam", "notifications", "solana"],
   "author": "",
   "license": "ISC",
   "bugs": {

@@ -1,10 +1,10 @@
 import https from 'https';
+import { SUPER_TEAM_API_URL } from '../config/api-url.js';
 
 const bounties = (bot) => {
   bot.onText(/\/bounties/, (msg) => {
     const chatId = msg.chat.id;
-    const url = process.env.SUPERTEAM_API;
-
+    const url = SUPER_TEAM_API_URL;
     https.get(url, (res) => {
       let data = '';
 
