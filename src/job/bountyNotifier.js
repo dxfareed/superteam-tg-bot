@@ -27,7 +27,9 @@ const fetchBounties = () => {
 
 const processBounties = async (bot) => {
   try {
-    const bounties = await fetchBounties();
+    const allBounties = await fetchBounties();
+    const bounties = allBounties.filter(bounty => bounty.sponsor && bounty.sponsor.name === 'Superteam Ireland');
+    
     const bountiesCollection = collection(db, 'bounties');
     const groupChatId = process.env.TELEGRAM_GROUP_CHAT_ID;
 

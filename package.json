@@ -14,7 +14,13 @@
     "type": "git",
     "url": "git+https://github.com/dxfareed/superteam-tg-bot.git"
   },
-  "keywords": ["telegram", "bot", "superteam", "notifications", "solana"],
+  "keywords": [
+    "telegram",
+    "bot",
+    "superteam",
+    "notifications",
+    "solana"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -23,8 +29,10 @@
   "homepage": "https://github.com/dxfareed/superteam-tg-bot#readme",
   "description": "A Telegram bot for Superteam notifications and community management",
   "dependencies": {
+    "@genkit-ai/google-genai": "^1.19.3",
     "dotenv": "^17.2.2",
     "firebase": "^12.3.0",
+    "genkit": "^1.19.3",
     "node-cron": "^4.2.1",
     "node-telegram-bot-api": "^0.66.0"
   }
